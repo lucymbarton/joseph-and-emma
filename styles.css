@@ -1,0 +1,75 @@
+
+.bg-light{
+    background-color: #95b2ec9f !important;
+}
+body{
+    background-color: rgb(226, 224, 213);
+    margin-bottom: 50px;
+    overflow-x: hidden;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(151, 144, 247);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(20, 2, 2);
+}
+footer {
+    outline: solid black 1px;
+    height: 50px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
+
+.content h1 {
+    background-color: rgba(255, 255, 255, 0.315);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    background-color: #95b2ec9f ;
+    position: fixed;
+    height: 25px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+ 
+  footer a {
+  
+    margin: 1%;
+    color: black;
+    text-decoration: none;
+    }
+
+.josephSide {
+    width: 50%;
+    text-align: center;
+    margin-bottom: -50px;
+}
+
+.josephSide img:hover {
+    transform: scale(1.01); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+.emmaSide {
+    width: 50%;
+    text-align: center;
+    margin-bottom: -50px;
+}
+.emmaSide img:hover {
+    transform: scale(1.01); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+.info {
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
