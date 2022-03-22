@@ -54,19 +54,36 @@ footer{
     width: 50%;
     text-align: center;
     margin-bottom: -50px;
+    text-decoration: none;
 }
 
-.josephSide img:hover {
+.josephSide a {
+  text-decoration: none;
+}
+.emmaSide a {
+  text-decoration: none;
+}
+
+.josephSide a img:hover {
     transform: scale(1.01); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
 .emmaSide {
     width: 50%;
     text-align: center;
     margin-bottom: -50px;
+    text-decoration: none;
 }
-.emmaSide img:hover {
+.emmaSide a img:hover {
     transform: scale(1.01); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
+.josephSide a h1{
+  text-decoration: none;
+  color:  black;
+}
+.emmaSide a h1 {
+  text-decoration: none;
+  color: black;
+}
 
 .info {
     margin-top: 5%;

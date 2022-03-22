@@ -1,62 +1,3 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Joseph and Emma</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel='stylesheet' href="/styles.css"/>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="/index.html">Joseph and Emma</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav" >
-              <ul class="navbar-nav" style="margin-left: auto;">
-                <li class="nav-item active">
-                  <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/pages/joseph.html">Joseph</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/pages/emma.html">Emma</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/pages/others.html">Others</a>
-                  </li>
-        
-              </ul>
-            </div>
-          </nav>
-
-          <div style="width: 100%; text-align: center;">
-            <h1>Letters to Emma</h1>
-          </div>
-          
-
-          <div id="root">
-            <div v-for="letter in lettersToEmma" style="margin-left: 5%; margin-right: 5%; padding-top: 5%;" >
-              <h2>{{ letter.date }}</h2>
-              <div>
-                <p v-html="letter.content"></p>
-              </div>
-            </div>
-          </div>
-
-
-
-          <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    </body>
-    <footer>
-
-    </footer>
-</html>
-
-<script>
 let letters = [
     {
         date: '6 June 1832',
@@ -123,13 +64,3 @@ let letters = [
         content: 'Carthage Jail Jun. 26 [27th] &#8212; 1844 &#8212; 20. Past 6 [8]. P. M. [A. M.] Dear Emma The Gov continues his courtesies, and permits us to see our friends. We hear this morning that the Governor will not go down with his troops to day [(to Nauvoo)] as was anticipated last Evening, but, if he does come down with his troops you will be protected, & I want you to tell Bro [Jonathan] Dunham to instruct the people to stay at home and attend to their own business and let there be no groups or gathering together unless by permission of the Gov &#8212; they are called together to receive communications from the Gov &#8212; which would please our people, but let the Gov. direct, &#8212; Bro Dunham of course, will obey the orders of the Government officers, and render them the assistance they require. There is no dan[g]ers of any “exterminating order” “Should there be a mutiny among the troops, (which we do not anticipate, excitment is abating,) a part will remain Loyal, and stand for the defence of the State & our rights; There is one principle which is Eternal, it is the duty of all men to protect their lives from every and the lives of their household whenever occasion [necessity] requires. and no power has a right to forbid it. when arrivest should the last extreme arrive, &#8212; but I anticipate no such extreme, &#8212; but caution is the parent of safety. &#8212; Joseph Smith P S Dear Emma I am very much resigned to my lot knowing I am justified and have done the best that could be done give my love to the children [p. [1]] and all my Friends Mrs Brower and all who in after inquire after me and as for treason I know that I have not commited any and they cannot prove one apearance of any thing of the kind So you need not have any fears that any harme can happen to us on that score may God bless you all Amen Joseph Smith P. S. 20 mi to 10 &#8212; I Just learn[ed] that the Governor is about to disband his troops, all but a guard to protect us and the peace, &#8212; and come himself to Nauvoo and deliver a speech to the people. This is right as I suppose. '
     }
 ]
-
-let app = new Vue({
-  // bind it to the #root div in the DOM
-  el: "#root",
-  // provide data for bindings
-  data: {
-    lettersToEmma: letters
-  }
-});
-</script>
