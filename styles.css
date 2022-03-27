@@ -90,3 +90,7 @@ footer{
     margin-left: 15%;
     margin-right: 15%;
 }
+
+.info p {
+  font-size: large;
+}
