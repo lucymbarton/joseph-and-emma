@@ -30,6 +30,32 @@
             </div>
           </nav>
 
+          <div style="width: 100%; text-align: center; margin-top: 2%; margin-bottom: 0;">
+            <h1>About Emma</h1>
+          </div>
+
+          <div style=" display: flex; margin-left: 5%; margin-right: 5%; padding-top: 2%; padding-bottom: 5%;">
+            <div style="width: 50%; margin-top: 5%;">
+              <img src="/images/emmaBlue.jpg" width="100%"/>
+              <br><br><br>
+              <img src="/images/emmaphoto.jpeg" width="100%"/>
+            </div>
+          <div class="info" style="margin-left: 10%; margin-right: 10%; width: 60%;" >
+            <p>Emma Hale was the seventh child born to Issac and Elizabeth Hale on July 10, 1804.</p>
+            <p>She was baptized into the Congregational Church shortly thereafter.</p>
+            <p>Emma was able to gain a formal education while growing up.</p>
+            <p>Emma was always religious, as a child she was known to go into the woods and pray. Some thought that her father became converted to the family's faith after overhearing her prayers.</p>
+            <p>Emma's family expected her to marry someone more educated and wealthy than Joseph. This attributed to some of their distate towards him. When Joseph asked Issac's permission to marry Emma, he refused. The family was also wary of Joseph's "religious mission."</p>
+            <p>Describing the day of her eloping with Joseph, Emma said, "I had no intention of marrying when I left home, but during my visit at Mr. Stowell's, your father visited me there... Preferring to marry him to any other man I knew, I consented."</p>
+            <p>After they were married, Joseph and Emma went to live with Joseph's parents in Manchester. Emma didn't see her parents until December of that year. The couple lived near Emma's parents for a short while. After the saints moved to Ohio, it seems that Emma's parents cut off contact with her until after her father's death in 1839.</p>
+            <p>Joseph and Emma had 11 children (2 adopted), 6 of whom died in infancy. This was a great trial of Emma's. </p>
+            <p>Not long before Joseph's death, Emma said, "I desire with all my heart to honor and respect my husband as my head, ever to live in his confidence and by acting in unison with him retain the place which God has given me by his side."</p>
+            <p>After Joseph's death, Emma lived in Nauvoo for the rest of her life. She joined a break-off of the church there and remarried.</p>
+            <p>Most of Emma's letters to Joseph have been lost, most likely because Joseph did not have a good place to store them while he traveled.</p>
+          </div>
+            
+          </div>
+
 
           <div style="width: 100%; text-align: center;">
             <h1>Letters To Joseph</h1>
@@ -38,7 +64,7 @@
           <div id="root">
             <div v-for="letter in lettersToEmma" style="margin-left: 5%; margin-right: 5%; padding-top: 2%;" >
               <h2>{{ letter.date }}</h2>
-              <div>
+              <div style="margin-left: 8%; margin-right: 8%;">
                 <p v-html="letter.content"></p>
               </div>
             </div>
